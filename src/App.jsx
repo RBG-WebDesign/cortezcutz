@@ -21,25 +21,25 @@ const TEAM = [
     id: 'lupe',
     name: "Lupe",
     role: "Director",
-    img: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=2070&auto=format&fit=crop"
+    img: "/images/haircuts/gallery-1000.jpeg"
   },
   {
     id: 'america',
     name: "America",
     role: "Stylist",
-    img: "https://images.unsplash.com/photo-1595152772835-219638b6a8bd?q=80&w=2070&auto=format&fit=crop"
+    img: "/images/haircuts/gallery-1002.jpeg"
   },
   {
     id: 'bryan',
     name: "Bryan",
     role: "Artist",
-    img: "https://images.unsplash.com/photo-1534308143481-c55f00be8bd7?q=80&w=2070&auto=format&fit=crop"
+    img: "/images/haircuts/gallery-1003.jpeg"
   },
   {
     id: 'favian',
     name: "Favian",
     role: "Specialist",
-    img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=2070&auto=format&fit=crop"
+    img: "/images/haircuts/gallery-1004.jpeg"
   },
 ];
 
@@ -139,7 +139,7 @@ const App = () => {
 
         {/* Background Texture for Menu */}
         <div className="absolute inset-0 opacity-5 pointer-events-none">
-          <img src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?q=80&w=2574" className="w-full h-full object-cover grayscale" alt="texture" />
+          <img src="/images/haircuts/gallery-1006.jpeg" className="w-full h-full object-cover grayscale" alt="texture" />
         </div>
 
         <div className="relative z-10 flex flex-col gap-8 text-center">
@@ -259,7 +259,7 @@ const HomeView = ({ openBooking }) => {
           <div className="md:col-span-5 order-1 md:order-2 h-[50vh] md:h-[80vh] relative group">
             <div className="absolute inset-0 bg-[#E5E2DD] overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=2070&auto=format&fit=crop"
+                src="/images/haircuts/gallery-1005.jpeg"
                 alt="Barber"
                 className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105 filter grayscale contrast-125"
               />
@@ -330,7 +330,7 @@ const HomeView = ({ openBooking }) => {
       {/* REVIEWS - DARK SECTION */}
       <section id="stories" className="py-32 px-6 md:px-12 bg-[#1c1c1c] text-white relative">
         <div className="absolute inset-0 opacity-20 pointer-events-none">
-          <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=2071" className="w-full h-full object-cover grayscale" alt="texture" />
+          <img src="/images/haircuts/gallery-1011.jpeg" className="w-full h-full object-cover grayscale" alt="texture" />
         </div>
         <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center relative z-10">
           <div>
