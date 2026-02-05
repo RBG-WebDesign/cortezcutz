@@ -236,14 +236,13 @@ const HomeView = ({ openBooking }) => {
 
           {/* Text Content */}
           <div className="md:col-span-7 order-2 md:order-1 z-10">
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-light tracking-tighter leading-[0.9] mb-8 text-stone-900">
-              MODERN<br />
-              <span className="font-bold italic">GROOMING</span><br />
-              RITUALS
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-light tracking-tighter leading-[1] mb-8 text-stone-900">
+              YOUR BARBERSHOP<br />
+              IN <span className="font-bold italic">CULVER CITY</span><br />
+              & PALMS.
             </h1>
             <p className="text-lg md:text-xl font-light text-stone-600 mb-12 max-w-lg leading-relaxed">
-              Curated cuts and styling in the heart of Los Angeles.
-              Elevate your aesthetic with our bilingual specialists.
+              Just a great cut, a sharp fade, and the right vibe. Welcome to the chair.
             </p>
             <div className="flex flex-col sm:flex-row gap-6">
               <button
