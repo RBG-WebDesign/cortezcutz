@@ -232,7 +232,38 @@ const HomeView = ({ openBooking }) => {
     <div className="animate-in fade-in duration-700">
 
       {/* HERO - EDITORIAL STYLE */}
-      <section id="hero" className="relative min-h-screen flex items-center pt-20 px-6 md:px-12">
+      {/* HERO SECTION */}
+
+      {/* MOBILE HERO (Visible < 768px) */}
+      <section id="hero-mobile" className="md:hidden relative pt-24 pb-12 px-6">
+        <div className="flex flex-col gap-8">
+          <div className="h-[40vh] w-full relative overflow-hidden bg-[#E5E2DD]">
+            <img
+              src="/cortezcutz/images/HeroPhoto.png"
+              alt="Barber"
+              className="w-full h-full object-cover filter grayscale contrast-125"
+            />
+          </div>
+          <div>
+            <h1 className="text-5xl font-light tracking-tighter leading-[1] mb-6 text-stone-900">
+              <span className="text-xl font-bold italic block mb-2 text-stone-500 tracking-normal">CULVER CITY & PALMS</span>
+              YOUR<br />NEIGHBORHOOD<br />BARBERSHOP.
+            </h1>
+            <p className="text-base font-light text-stone-600 mb-8 leading-relaxed">
+              Just a great cut, a sharp fade, and the right vibe. Welcome to the chair.
+            </p>
+            <button
+              onClick={openBooking}
+              className="w-full bg-stone-900 text-white py-4 text-xs font-bold uppercase tracking-[0.2em]"
+            >
+              Reserve Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* DESKTOP HERO (Visible >= 768px) */}
+      <section id="hero" className="hidden md:flex relative min-h-screen items-center pt-20 px-6 md:px-12">
         <div className="max-w-screen-xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
 
           {/* Text Content */}
