@@ -235,9 +235,9 @@ const HomeView = ({ openBooking }) => {
       {/* HERO SECTION */}
 
       {/* MOBILE HERO (Visible < 768px) */}
-      <section id="hero-mobile" className="md:hidden relative pt-24 pb-12 px-6">
-        <div className="flex flex-col gap-8">
-          <div className="h-[40vh] w-full relative overflow-hidden bg-[#E5E2DD]">
+      <section id="hero-mobile" className="md:hidden relative pt-20 pb-8 px-6">
+        <div className="flex flex-col gap-4">
+          <div className="h-[30vh] w-full relative overflow-hidden bg-[#E5E2DD]">
             <img
               src="/cortezcutz/images/HeroPhoto.png"
               alt="Barber"
@@ -245,16 +245,16 @@ const HomeView = ({ openBooking }) => {
             />
           </div>
           <div>
-            <h1 className="text-5xl font-light tracking-tighter leading-[1] mb-6 text-stone-900">
-              <span className="text-xl font-bold italic block mb-2 text-stone-500 tracking-normal">CULVER CITY & PALMS</span>
+            <h1 className="text-4xl font-light tracking-tighter leading-[1] mb-4 text-stone-900">
+              <span className="text-sm font-bold italic block mb-2 text-stone-500 tracking-widest uppercase">Culver City & Palms</span>
               YOUR<br />NEIGHBORHOOD<br />BARBERSHOP.
             </h1>
-            <p className="text-base font-light text-stone-600 mb-8 leading-relaxed">
+            <p className="text-sm font-light text-stone-600 mb-6 leading-relaxed">
               Just a great cut, a sharp fade, and the right vibe. Welcome to the chair.
             </p>
             <button
               onClick={openBooking}
-              className="w-full bg-stone-900 text-white py-4 text-xs font-bold uppercase tracking-[0.2em]"
+              className="w-full bg-stone-900 text-white py-3 text-xs font-bold uppercase tracking-[0.2em]"
             >
               Reserve Now
             </button>
