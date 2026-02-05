@@ -93,7 +93,7 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#FDFBF9] text-stone-900 font-sans selection:bg-stone-900 selection:text-white overflow-x-hidden">
+    <div className="min-h-screen bg-[#FDFBF9] text-stone-900 font-sans selection:bg-stone-900 selection:text-white overflow-x-hidden select-none">
 
       {/* --- NAVIGATION --- */}
       <nav className={`fixed w-full z-50 transition-all duration-500 ${scrolled ? 'bg-[#FDFBF9]/95 backdrop-blur-sm py-4 border-b border-stone-200' : 'bg-transparent py-8'}`}>
@@ -535,7 +535,7 @@ const BookingView = ({ onBack, bookingData, setBookingData, onSuccess }) => {
               <label className="block text-xs font-bold uppercase tracking-widest mb-4 text-stone-400">Date & Time</label>
               <input
                 type="date"
-                className="w-full bg-transparent border-b border-stone-300 py-4 text-xl font-light focus:outline-none focus:border-stone-900 rounded-none mb-8"
+                className="w-full bg-transparent border-b border-stone-300 py-4 text-xl font-light focus:outline-none focus:border-stone-900 rounded-none mb-8 select-text"
                 value={bookingData.date}
                 onChange={(e) => updateData('date', e.target.value)}
               />
@@ -573,14 +573,14 @@ const BookingView = ({ onBack, bookingData, setBookingData, onSuccess }) => {
               <input
                 type="text"
                 placeholder="Full Name"
-                className="w-full bg-transparent border-b border-stone-300 py-4 text-xl font-light focus:outline-none focus:border-stone-900 rounded-none placeholder:text-stone-300"
+                className="w-full bg-transparent border-b border-stone-300 py-4 text-xl font-light focus:outline-none focus:border-stone-900 rounded-none placeholder:text-stone-300 select-text"
                 value={bookingData.name}
                 onChange={(e) => updateData('name', e.target.value)}
               />
               <input
                 type="tel"
                 placeholder="Phone Number"
-                className="w-full bg-transparent border-b border-stone-300 py-4 text-xl font-light focus:outline-none focus:border-stone-900 rounded-none placeholder:text-stone-300"
+                className="w-full bg-transparent border-b border-stone-300 py-4 text-xl font-light focus:outline-none focus:border-stone-900 rounded-none placeholder:text-stone-300 select-text"
                 value={bookingData.phone}
                 onChange={(e) => updateData('phone', e.target.value)}
               />
