@@ -21,25 +21,25 @@ const TEAM = [
     id: 'lupe',
     name: "Lupe",
     role: "Director",
-    img: "/images/haircuts/gallery-1000.jpeg"
+    img: "/images/LupeCortez.jpg"
   },
   {
     id: 'america',
     name: "America",
     role: "Stylist",
-    img: "/images/haircuts/gallery-1002.jpeg"
+    img: "/images/America.jpg"
   },
   {
     id: 'bryan',
     name: "Bryan",
     role: "Artist",
-    img: "/images/haircuts/gallery-1003.jpeg"
+    img: "/images/Bryan.jpg"
   },
   {
     id: 'favian',
     name: "Favian",
     role: "Specialist",
-    img: "/images/haircuts/gallery-1004.jpeg"
+    img: "/images/Favian.jpg"
   },
 ];
 
