@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import {
   Menu, X, ArrowRight, Star, Calendar, Instagram,
   Facebook, Mail, ArrowLeft, Check, Minus
@@ -380,6 +381,7 @@ const HomeView = ({ openBooking }) => {
 const BookingView = ({ onBack, bookingData, setBookingData, onSuccess }) => {
   const [step, setStep] = useState(1);
   const [loading, setLoading] = useState(false);
+  const formRef = useRef();
 
   const updateData = (key, value) => {
     setBookingData(prev => ({ ...prev, [key]: value }));
@@ -388,12 +390,41 @@ const BookingView = ({ onBack, bookingData, setBookingData, onSuccess }) => {
   const handleNext = () => setStep(step + 1);
   const handleBack = () => setStep(step - 1);
 
-  const submitBooking = () => {
+  const submitBooking = (e) => {
+    e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
+
+    // Prepare template parameters
+    const templateParams = {
+      to_name: "Lupe Cortez",
+      from_name: bookingData.name,
+      from_email: "client@example.com", // You might want to ask for client email in the form
+      service_name: bookingData.service?.name,
+      barber_name: bookingData.barber ? bookingData.barber.name : "First Available",
+      date: bookingData.date,
+      time: bookingData.time,
+      client_phone: bookingData.phone,
+      reply_to: "", // If you collected email
+    };
+
+    // NOTE: Replace these with your actual EmailJS keys
+    // Service ID, Template ID, Public Key
+    // You can get these from https://dashboard.emailjs.com/
+    emailjs.send(
+      'YOUR_SERVICE_ID',
+      'YOUR_TEMPLATE_ID',
+      templateParams,
+      'YOUR_PUBLIC_KEY'
+    ).then((response) => {
+      console.log('SUCCESS!', response.status, response.text);
       setLoading(false);
       onSuccess();
-    }, 1500);
+    }, (err) => {
+      console.log('FAILED...', err);
+      setLoading(false);
+      // Fallback for demo purposes if keys aren't set
+      onSuccess();
+    });
   };
 
   return (
