@@ -482,7 +482,7 @@ const BookingView = ({ onBack, bookingData, setBookingData, onSuccess }) => {
               {SERVICES.map(service => (
                 <button
                   key={service.id}
-                  onClick={() => updateData('service', service)}
+                  onClick={() => { updateData('service', service); handleNext(); }}
                   className={`flex justify-between items-center p-6 text-left border transition-all ${bookingData.service?.id === service.id ? 'border-stone-900 bg-stone-900 text-white' : 'border-stone-200 bg-white hover:border-stone-400 text-stone-900'}`}
                 >
                   <div>
@@ -543,7 +543,7 @@ const BookingView = ({ onBack, bookingData, setBookingData, onSuccess }) => {
                 {["09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00"].map(time => (
                   <button
                     key={time}
-                    onClick={() => updateData('time', time)}
+                    onClick={() => { updateData('time', time); handleNext(); }}
                     className={`py-3 text-sm border transition-all ${bookingData.time === time ? 'bg-stone-900 text-white border-stone-900' : 'border-stone-200 hover:border-stone-400'}`}
                   >
                     {time}
