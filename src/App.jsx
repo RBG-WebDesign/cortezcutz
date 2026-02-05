@@ -21,25 +21,25 @@ const TEAM = [
     id: 'lupe',
     name: "Lupe",
     role: "Director",
-    img: "/images/LupeCortez.jpg"
+    img: "/cortezcutz/images/LupeCortez.jpg"
   },
   {
     id: 'america',
     name: "America",
     role: "Stylist",
-    img: "/images/America.jpg"
+    img: "/cortezcutz/images/America.jpg"
   },
   {
     id: 'bryan',
     name: "Bryan",
     role: "Artist",
-    img: "/images/Bryan.jpg"
+    img: "/cortezcutz/images/Bryan.jpg"
   },
   {
     id: 'favian',
     name: "Favian",
     role: "Specialist",
-    img: "/images/Favian.jpg"
+    img: "/cortezcutz/images/Favian.jpg"
   },
 ];
 
@@ -139,7 +139,7 @@ const App = () => {
 
         {/* Background Texture for Menu */}
         <div className="absolute inset-0 opacity-5 pointer-events-none">
-          <img src="/images/haircuts/gallery-1006.jpeg" className="w-full h-full object-cover grayscale" alt="texture" />
+          <img src="/cortezcutz/images/haircuts/gallery-1006.jpeg" className="w-full h-full object-cover grayscale" alt="texture" />
         </div>
 
         <div className="relative z-10 flex flex-col gap-8 text-center">
@@ -258,7 +258,7 @@ const HomeView = ({ openBooking }) => {
           <div className="md:col-span-5 order-1 md:order-2 h-[50vh] md:h-[80vh] relative group">
             <div className="absolute inset-0 bg-[#E5E2DD] overflow-hidden">
               <img
-                src="/images/haircuts/gallery-1005.jpeg"
+                src="/cortezcutz/images/HeroPhoto.png"
                 alt="Barber"
                 className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105 filter grayscale contrast-125"
               />
@@ -329,7 +329,7 @@ const HomeView = ({ openBooking }) => {
       {/* REVIEWS - DARK SECTION */}
       <section id="stories" className="py-32 px-6 md:px-12 bg-[#1c1c1c] text-white relative">
         <div className="absolute inset-0 opacity-20 pointer-events-none">
-          <img src="/images/haircuts/gallery-1011.jpeg" className="w-full h-full object-cover grayscale" alt="texture" />
+          <img src="/cortezcutz/images/haircuts/gallery-1011.jpeg" className="w-full h-full object-cover grayscale" alt="texture" />
         </div>
         <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center relative z-10">
           <div>
