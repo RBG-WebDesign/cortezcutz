@@ -45,9 +45,9 @@ const TEAM = [
 ];
 
 const REVIEWS = [
-  { name: "Carlos M.", text: "An absolute vibe. Not just a haircut, it's an experience.", stars: 5 },
-  { name: "Sarah J.", text: "The aesthetic is unmatched and the service is impeccable.", stars: 5 },
-  { name: "David R.", text: "Finally, a spot in LA that feels curated but welcoming.", stars: 5 },
+  { name: "Julia Velasco", text: "Cortez Cutz is an amazing place to get your hair cut. The vibe is friendly and welcoming towards all ages! As soon as you walk in there is lovely seats for waiting.", stars: 5 },
+  { name: "Vilma Curiel", text: "We absolutely love coming here! The barbers are incredibly patient, kind, and skilled - they know exactly how to make kids feel comfortable. The shop is clean and welcoming.", stars: 5 },
+  { name: "Teejay Bernardino", text: "This family owned barbershop is the best. Kudos to this guy who makes sure he cuts his customers hair efficiently and with quality. Once you step in the shop you will immediately feel welcome.", stars: 5 },
 ];
 
 /* --- COMPONENTS --- */
